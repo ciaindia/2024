@@ -1,0 +1,24 @@
+mern
+
+html 
+basic tags div p span 
+form input text 
+button 
+html table 
+
+basic css properties
+
+bootstrap
+
+javascript basics
+debug console.log trace table warn 
+if else 
+for 
+array  0 n-1
+json key:value
+array of json
+
+mongodb local mongodb atlas
+node js express framework
+vanilla js 
+react js | angular | vue js
