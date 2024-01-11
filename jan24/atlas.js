@@ -1,7 +1,7 @@
 // mongodb+srv://<username>:<password>@cluster0.dslyw.mongodb.net/?retryWrites=true&w=majority
 
 const mongoose = require("mongoose");
-const conn_str = "mongodb+srv://mern:mern@cluster0.dslyw.mongodb.net/janapp?retryWrites=true&w=majority";
+const conn_str = "mongodb+srv://username:password@cluster0.urlid.mongodb.net/yourdatabasename?retryWrites=true&w=majority";
 
 mongoose.connect(conn_str)
 .then( () => console.log("Connected successfully...") )
