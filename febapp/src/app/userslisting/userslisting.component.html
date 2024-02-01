@@ -1,0 +1,63 @@
+<!-- <div>Hello from Angular</div> -->
+
+<!-- <div>{{ title }}</div> -->
+
+<!-- <div>{{ users | json }}</div> -->
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Avatar</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td>{{u['id']}}</td>
+        <td>{{u['first_name'] + " " + u['last_name']}}</td>
+        <td>{{u['email']}}</td>
+        <td><img [src]="u['avatar']" /></td>
+        <td>
+          <a href="" class="btn btn-secondary">Edit</a>
+          &nbsp;
+          <button (click)="deleteUser(u['id'])" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- 
+    
+    CW1
+  
+    Define function ngOnInit in component file 
+    and make ajax call using fetch function
+    load data from reqres.in users url
+    https://reqres.in/api/users?page=1
+  
+    1. print users data in console.table
+  
+    2. print users data in html using expression and json pipe
+    e.g. {{ users | json }}
+  
+    3. print all users records in table using
+    ngFor loop
+  
+    4. integrate bootstrap
+  
+    5. show avatar in image tag and also add two action
+      i. edit link
+      ii. delete button
+  
+    6. create a function deleteUser and just alert specific id of user on click of delete button
+  
+    call fetch function and method should be delete
+    url: https://reqres.in/api/users/2
+  
+  
+    HW: 7. replace all fetch functions by rxjs/ajax
+  -->

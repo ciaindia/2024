@@ -1,0 +1,22 @@
+<h1>Edit User</h1>
+
+<!-- {{ id }} -->
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name">
+  
+    <label for="job">Job: </label>
+    <input id="job" type="text" formControlName="job">
+  
+    <button type="submit" [disabled]="!userForm.valid">
+        Submit
+    </button>
+
+  </form>
+
+  {{ userForm.value | json }}
+
+  {{ userForm.value.name }}
+  {{ userForm.value.job }}
